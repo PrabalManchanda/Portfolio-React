@@ -37,6 +37,9 @@ import PublicationCard from './publication-card';
  * @param {Object} config - the configuration object
  * @return {JSX.Element} the rendered GitProfile component
  */
+interface Config {
+  // define config properties here
+}
 const GitProfile = ({ config }: { config: Config }) => {
   const [sanitizedConfig] = useState<SanitizedConfig | Record<string, never>>(
     getSanitizedConfig(config),

@@ -6,15 +6,15 @@ import { createHtmlPlugin } from 'vite-plugin-html';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: CONFIG.base || '/',
+  base: '/',
   plugins: [
     react(),
     createHtmlPlugin({
       inject: {
         data: {
-          metaTitle: CONFIG.seo.title,
-          metaDescription: CONFIG.seo.description,
-          metaImageURL: CONFIG.seo.imageURL,
+          metaTitle: CONFIG.pageMetadata.title,
+          metaDescription: CONFIG.pageMetadata.description,
+          metaImageURL: CONFIG.pageMetadata.imageURL,
         },
       },
     }),
