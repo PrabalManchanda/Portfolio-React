@@ -9,7 +9,7 @@ const CONFIG = {
       },
     },
     social: {
-      linkedin: 'https://www.linkedin.com/in/prabal-manchanda/',
+      linkedin: 'prabal-manchanda/',
       twitter: '',
       facebook: '',
       instagram: '',
@@ -22,26 +22,12 @@ const CONFIG = {
       email: 'manchandaprabal878@email.com',
     },
     resume: {
-      fileUrl: '', // Add your resume link here if available
+      fileUrl: '', // Add your resume URL here
     },
     skills: [
-        'Python',
-        'Java',
-        'JavaScript',
-        'TypeScript',
-        'React.js',
-        'Node.js',
-        'Azure',
-        'OpenAI API',
-        'MongoDB',
-        'Firebase',
-        'Spring Boot',
-        'MySQL',
-        'PHP',
-        'Java',
-        'Swift',
-        'Docker',
-        'Tailwind CSS',
+      'Python', 'Java', 'JavaScript', 'TypeScript', 'React.js', 'Node.js',
+      'Spring Boot', 'MongoDB', 'MySQL', 'Firebase',
+      'Azure', 'OpenAI API', 'Docker', 'Git', 'Tailwind CSS', 'SQL', 'HTML', 'CSS'
     ],
     experiences: [
       {
@@ -50,6 +36,13 @@ const CONFIG = {
         from: 'December 2024',
         to: 'Present',
         companyLink: '',
+        description: [
+          '🚀 Spearheaded AI/ML innovations using LLMs, Python, Azure, and OpenAI, improving platform performance and engagement.',
+          '🛠️ Automated AI deployment pipelines with Azure DevOps, reducing delivery time and enhancing reliability.',
+          '⚙️ Fine-tuned models and leveraged cloud computing for faster inference and improved scalability.',
+          '🧠 Integrated NLP and deep learning solutions, adding intelligent AI-powered user features.',
+          '🧪 Led MLOps architecture planning, boosting system stability and AI deployment efficiency.'
+        ]
       },
       {
         company: 'Skill Squirrel',
@@ -57,6 +50,12 @@ const CONFIG = {
         from: 'September 2024',
         to: 'December 2024',
         companyLink: '',
+        description: [
+          '🤖 Integrated OpenAI’s API with React and Azure to power conversational AI features.',
+          '🧩 Built serverless apps on Azure Functions with 99.9% uptime and optimized compute cost.',
+          '📈 Enhanced NLP features for smarter chatbots and more human-like conversation.',
+          '🚦 Refactored APIs to improve response time and system efficiency by 30%.'
+        ]
       },
       {
         company: 'Zeuty',
@@ -64,6 +63,12 @@ const CONFIG = {
         from: 'June 2024',
         to: 'November 2024',
         companyLink: '',
+        description: [
+          '🔧 Built REST APIs supporting seamless front-end interactions.',
+          '🗃️ Designed and managed scalable Azure SQL databases for dynamic data-driven systems.',
+          '📊 Optimized SQL performance for faster queries and analytics.',
+          '🔄 Worked in an agile team with Git version control and CI/CD pipelines.'
+        ]
       },
       {
         company: 'Skill Squirrel',
@@ -71,6 +76,12 @@ const CONFIG = {
         from: 'January 2024',
         to: 'April 2024',
         companyLink: '',
+        description: [
+          '💡 Researched and applied Node.js APIs and Azure Prompt Flow to streamline new features.',
+          '🌐 Built and integrated features into a live production app with an entirely remote team.',
+          '🛠️ Maintained dev environments independently, showing strong self-management.',
+          '📁 Used GitHub & Jira for team coordination, issue tracking, and deployment tasks.'
+        ]
       },
       {
         company: 'Headstarter AI',
@@ -78,7 +89,13 @@ const CONFIG = {
         from: 'July 2024',
         to: 'Present',
         companyLink: '',
-      },
+        description: [
+          '🏅 Selected for a competitive fellowship program for software innovation.',
+          '🌍 Contributed to open-source projects, collaborating on GitHub.',
+          '🚀 Participated in hackathons, rapidly building prototypes in 24–48 hours.',
+          '📈 Working on a startup-focused capstone project involving business + tech solutions.'
+        ]
+      }
     ],
     certifications: [
       { name: 'Node.js', link: '' },
@@ -89,45 +106,43 @@ const CONFIG = {
       { name: 'Lua Course', link: '' },
       { name: 'JavaScript', link: '' },
       { name: 'React.js', link: '' },
-      { name: 'Data and Programming Foundation for AI', link: '' },
+      { name: 'Data and Programming Foundation for AI', link: '' }
     ],
     educations: [
       {
         institution: 'Sheridan College',
         degree: 'Software Development & Network Engineering',
         from: '2022',
-        to: '2025',
-      },
+        to: '2025'
+      }
     ],
     publications: [],
     blog: {
       source: '',
       username: '',
-      limit: 0,
+      limit: 0
     },
     googleAnalytics: {
-      id: '',
+      id: ''
     },
     hotjar: {
       id: '',
-      snippetVersion: 6,
+      snippetVersion: 6
     },
     projects: {
       github: {
         display: true,
         header: 'GitHub Projects',
-        mode: 'automatic',
-        automatic: {
-          sortBy: 'stars',
-          limit: 12,
-          exclude: {
-            forks: true,
-            projects: [],
-          },
-        },
+        mode: 'manual',
         manual: {
-          projects: [],
-        },
+            projects: [
+              'Prabal31/My-Portfolio',
+              'Prabal31/Portfolio-Builder',
+              'rishabhworks/The-Semicolon-Squad',
+              'Prabal31/Manga-Mania',
+              'Prabal31/Scrabble',
+            ],
+          },
       },
       external: {
         header: 'Featured Projects',
@@ -135,40 +150,48 @@ const CONFIG = {
           {
             title: 'PhrasePerfect',
             description:
-              'React-based app featuring AI-powered text utilities (Paraphraser, Grammar Checker, Summarizer, etc.) built with GeminiAI and hosted on Firebase + MongoDB.',
+              'React + Gemini AI app with 6 AI-powered tools like paraphrasing, grammar check, summarizer, translator, AI detector, and citation generator. Uses Firebase and MongoDB for real-time performance.',
             imageUrl: 'https://via.placeholder.com/300x200.png?text=PhrasePerfect',
             link: 'https://example.com',
           },
           {
             title: 'Portfolio Builder',
             description:
-              'Node.js & OpenAI-powered app to generate personal portfolios with an intuitive frontend and GPT-4 integration.',
+              'Build portfolios using Node.js and GPT-4 with OpenAI integration. Features intuitive form-based UI and custom command generation for quick deployment.',
             imageUrl: 'https://via.placeholder.com/300x200.png?text=Portfolio+Builder',
             link: 'https://example.com',
           },
           {
-            title: 'Virtual Bookstore',
+            title: 'Deeproot',
             description:
-              'Built using Java Spring Boot + MySQL + Spring Security with user role access and secure REST APIs.',
-            imageUrl: 'https://via.placeholder.com/300x200.png?text=Virtual+Bookstore',
+              'Browser extension integrating real-time stock data, market news, and AI-driven insights directly into Chrome/Firefox. Built with React, Flask, Firebase, MongoDB, and OpenAI.',
+            imageUrl: 'https://via.placeholder.com/300x200.png?text=Deeproot',
             link: 'https://example.com',
           },
           {
-            title: 'Scrabble Game',
+            title: 'Skeleton',
             description:
-              'Python-based game project focusing on UI interaction, word validation, and scoring with custom logic.',
-            imageUrl: 'https://via.placeholder.com/300x200.png?text=Scrabble+Game',
+              'Streamlines full-stack project setup by generating bash commands based on user input. Built with React, Node.js, Express, dynamic API fetching, and project template database.',
+            imageUrl: 'https://via.placeholder.com/300x200.png?text=Skeleton',
             link: 'https://example.com',
           },
           {
-            title: 'My Portfolio',
+            title: 'WellnessGenie',
             description:
-              'Personal portfolio built using Angular, NodeJs, MongoDb. Features real-time updates and dynamic routing.',
-            imageUrl: 'https://via.placeholder.com/300x200.png?text=My+Portfolio',
+              'A wellness tracker for IT professionals integrating wearable data, mental wellness tips, and AI recommendations. Backed by TAM research, AI-driven alerts, and a sleek UX.',
+            imageUrl: 'https://via.placeholder.com/300x200.png?text=WellnessGenie',
+            link: 'https://example.com',
+          },
+          {
+            title: 'Machilearn Model',
+            description:
+              'Custom machine learning model trained for AI applications with focus on predictive analytics, automation, and API integration for real-time inference.',
+            imageUrl: 'https://via.placeholder.com/300x200.png?text=Machilearn+Model',
             link: 'https://example.com',
           },
         ],
       },
+      
     },
     themeConfig: {
       defaultTheme: 'dark',
@@ -180,7 +203,7 @@ const CONFIG = {
         'synthwave', 'retro', 'cyberpunk', 'valentine', 'halloween',
         'garden', 'forest', 'aqua', 'lofi', 'pastel', 'fantasy',
         'wireframe', 'black', 'luxury', 'dracula', 'cmyk', 'autumn',
-        'business', 'acid', 'lemonade', 'night', 'coffee', 'winter',
+        'business', 'acid', 'lemonade', 'night', 'coffee', 'winter'
       ],
       customTheme: {
         primary: '#4ade80',
@@ -189,18 +212,18 @@ const CONFIG = {
         neutral: '#1f2937',
         'base-100': '#ffffff',
         '--rounded-box': '1rem',
-        '--rounded-btn': '1rem',
-      },
+        '--rounded-btn': '1rem'
+      }
     },
     pageMetadata: {
       title: 'Prabh Manchanda | Portfolio',
       description:
-        "Hey there! I'm Prabh Manchanda, a passionate developer crafting next-gen software experiences.",
+        "Hi, I'm Prabh Manchanda — a software engineer building scalable, AI-powered solutions with precision and creativity.",
       imageURL:
-        'https://via.placeholder.com/1200x630.png?text=Prabh+Manchanda+Portfolio',
+        'https://via.placeholder.com/1200x630.png?text=Prabh+Manchanda+Portfolio'
     },
-    footer: `Made with ❤️ using <a class="text-primary" href="https://github.com/arifszn/gitprofile" target="_blank" rel="noreferrer">GitProfile</a>`,
-    enablePWA: true,
+    footer: '© 2024 Prabal Manchanda. All rights reserved. | Built with ❤️ using React and Vite.',
+    enablePWA: true
   };
   
   export default CONFIG;
