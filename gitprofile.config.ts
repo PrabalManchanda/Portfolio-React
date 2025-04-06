@@ -18,7 +18,7 @@ const CONFIG= {
       medium: '',
       dev: '',
       website: '',
-      phone: '',
+      phone: '+1(647) 530-0715',
       email: 'manchandaprabal878@email.com',
     },
     resume: {
@@ -44,7 +44,7 @@ const CONFIG= {
         position: 'Software Developer',
         from: 'December 2024',
         to: 'Present',
-        companyLink: '',
+        companyLink: 'https://www.genieainow.com/genie-a.i-home-page',
         description: [
           '🚀 Spearheaded AI/ML innovations using LLMs, Python, Azure, and OpenAI, improving platform performance and engagement.',
           '🛠️ Automated AI deployment pipelines with Azure DevOps, reducing delivery time and enhancing reliability.',
@@ -58,7 +58,7 @@ const CONFIG= {
         position: 'AI Developer',
         from: 'September 2024',
         to: 'December 2024',
-        companyLink: '',
+        companyLink: 'https://www.skillsquirrel.com/',
         description: [
           '🤖 Integrated OpenAI’s API with React and Azure to power conversational AI features.',
           '🧩 Built serverless apps on Azure Functions with 99.9% uptime and optimized compute cost.',
@@ -84,7 +84,7 @@ const CONFIG= {
         position: 'Software Developer Fellow',
         from: 'July 2024',
         to: 'November 2024',
-        companyLink: '',
+        companyLink: 'https://headstarter.co/',
         description: [
           '🏅 Selected for a competitive fellowship program for software innovation.',
           '🌍 Contributed to open-source projects, collaborating on GitHub.',
@@ -97,7 +97,7 @@ const CONFIG= {
         position: 'Junior Software Developer',
         from: 'January 2024',
         to: 'April 2024',
-        companyLink: '',
+        companyLink: 'https://www.skillsquirrel.com/',
         description: [
           '💡 Researched and applied Node.js APIs and Azure Prompt Flow to streamline new features.',
           '🌐 Built and integrated features into a live production app with an entirely remote team.',
@@ -179,49 +179,49 @@ const CONFIG= {
             description:
               'Next-gen portfolio generator powered by GPT-4 and OpenAI, allowing intuitive form-based UI inputs and automated command-line deployments. Built with Node.js, Express, and dynamic API integrations for enhanced customization.',
             imageUrl: '/images/Portfolio_builder.png',
-            link: '/project/portfolio-builder',
+            link: 'https://prabalmanchanda.com/',
           },
           {
             title: 'Deeproot',
             description:
               'Real-time market insights browser extension delivering personalized stock updates and news. Developed using Vue.js frontend, Python backend with Firebase integration, OpenAI-driven analytics, and deployed on Azure for scalable performance.',
             imageUrl: '/images/Deeproot.png',
-            link: 'https://example.com',
+            link: 'https://prabalmanchanda.com/',
           },
           {
             title: 'Skeleton',
             description:
               'Automated full-stack project scaffolding tool generating tailored bash commands for Flask backend, React frontend, MongoDB database, and integrated cloud services. Streamlines workflow and accelerates project initialization.',
             imageUrl: '/images/Skeleton.png',
-            link: 'https://example.com',
+            link: 'https://prabalmanchanda.com/',
           },
           {
             title: 'WellnessGenie',
             description:
               'AI-driven wellness tracking platform designed specifically for IT professionals. Integrates wearable technology, mental health analytics, personalized recommendations, and intuitive UX/UI, built with React, Firebase, ML models, and validated through extensive TAM analysis.',
             imageUrl: '/images/Genie.png',
-            link: 'https://example.com',
+            link: 'https://prabalmanchanda.com/',
           },
           {
             title: 'PredictiFlow',
             description:
               'An intelligent predictive analytics and automation model designed for real-time AI-driven insights. Built using Python, TensorFlow, Flask API for seamless integration, and Docker for scalable and efficient deployments.',
             imageUrl: '/images/Predictic.png',
-            link: 'https://example.com',
+            link: 'https://prabalmanchanda.com/',
           },
           {
             title: 'AI JobFinder',
             description:
               'A dynamic job search platform powered by AI, analyzing user resumes with GPT-4 and matching ideal roles in real-time. Built using React, Node.js, MongoDB, and OpenAI, providing intelligent job recommendations and application tracking.',
             imageUrl: '/images/Job.png',
-            link: 'https://example.com',
+            link: 'https://prabalmanchanda.com/',
           },
           {
             title: 'GitProfile',
             description:
               'Personalized GitHub portfolio showcasing user stats, projects, and contributions dynamically via GitHub API. Crafted with React, TypeScript, Tailwind CSS, Google Analytics integration, and progressive web app (PWA) features.',
             imageUrl: '/images/Git.png',
-            link: 'https://example.com',
+            link: 'https://prabalmanchanda.com/',
           }
         ]
       },
