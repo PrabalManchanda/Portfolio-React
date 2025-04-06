@@ -121,6 +121,7 @@ const CONFIG= {
         to: '2025'
       }
     ],
+    
     publications: [],
     blog: {
       source: '',
