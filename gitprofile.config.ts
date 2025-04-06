@@ -80,6 +80,19 @@ const CONFIG= {
         ]
       },
       {
+        company: 'Headstarter AI',
+        position: 'Software Developer Fellow',
+        from: 'July 2024',
+        to: 'November 2024',
+        companyLink: '',
+        description: [
+          '🏅 Selected for a competitive fellowship program for software innovation.',
+          '🌍 Contributed to open-source projects, collaborating on GitHub.',
+          '🚀 Participated in hackathons, rapidly building prototypes in 24–48 hours.',
+          '📈 Working on a startup-focused capstone project involving business + tech solutions.'
+        ]
+      },
+      {
         company: 'Skill Squirrel',
         position: 'Junior Software Developer',
         from: 'January 2024',
@@ -92,19 +105,6 @@ const CONFIG= {
           '📁 Used GitHub & Jira for team coordination, issue tracking, and deployment tasks.'
         ]
       },
-      {
-        company: 'Headstarter AI',
-        position: 'Software Developer Fellow',
-        from: 'July 2024',
-        to: 'Present',
-        companyLink: '',
-        description: [
-          '🏅 Selected for a competitive fellowship program for software innovation.',
-          '🌍 Contributed to open-source projects, collaborating on GitHub.',
-          '🚀 Participated in hackathons, rapidly building prototypes in 24–48 hours.',
-          '📈 Working on a startup-focused capstone project involving business + tech solutions.'
-        ]
-      }
     ],
     certifications: [
       { name: 'Python 3', link: '/Certificates/Python_certificate.pdf' },
@@ -160,6 +160,7 @@ const CONFIG= {
               'Prabal31/Book-Website',
               'Prabal31/Fitness',
               'Prabal31/Inventory-design',
+              'Prabal31/Inventory-Management',
             ],
           },
       },
@@ -170,56 +171,56 @@ const CONFIG= {
             title: 'PhrasePerfect',
             description:
               'An advanced AI-powered writing assistant featuring paraphrasing, grammar checking, summarization, translation, AI detection, and citation generation. Built with React, Gemini AI, Firebase for real-time updates, and MongoDB for efficient data management.',
-            imageUrl: 'https://via.placeholder.com/300x200.png?text=PhrasePerfect',
-            link: '/PhrasePerfect.png',
+            imageUrl: '/images/PhrasePerfect.png',
+            link: 'https://phraseperfect.vercel.app/',
           },
           {
             title: 'Portfolio Builder Pro',
             description:
               'Next-gen portfolio generator powered by GPT-4 and OpenAI, allowing intuitive form-based UI inputs and automated command-line deployments. Built with Node.js, Express, and dynamic API integrations for enhanced customization.',
-            imageUrl: 'https://via.placeholder.com/300x200.png?text=Portfolio+Builder+Pro',
-            link: '/Portfolio_builder.png',
+            imageUrl: '/images/Portfolio_builder.png',
+            link: '/project/portfolio-builder',
           },
           {
             title: 'Deeproot',
             description:
               'Real-time market insights browser extension delivering personalized stock updates and news. Developed using Vue.js frontend, Python backend with Firebase integration, OpenAI-driven analytics, and deployed on Azure for scalable performance.',
-            imageUrl: 'https://via.placeholder.com/300x200.png?text=Deeproot',
+            imageUrl: '/images/Deeproot.png',
             link: 'https://example.com',
           },
           {
             title: 'Skeleton',
             description:
               'Automated full-stack project scaffolding tool generating tailored bash commands for Flask backend, React frontend, MongoDB database, and integrated cloud services. Streamlines workflow and accelerates project initialization.',
-            imageUrl: 'https://via.placeholder.com/300x200.png?text=Skeleton',
+            imageUrl: '/images/Skeleton.png',
             link: 'https://example.com',
           },
           {
             title: 'WellnessGenie',
             description:
               'AI-driven wellness tracking platform designed specifically for IT professionals. Integrates wearable technology, mental health analytics, personalized recommendations, and intuitive UX/UI, built with React, Firebase, ML models, and validated through extensive TAM analysis.',
-            imageUrl: 'https://via.placeholder.com/300x200.png?text=WellnessGenie',
+            imageUrl: '/images/Genie.png',
             link: 'https://example.com',
           },
           {
             title: 'PredictiFlow',
             description:
               'An intelligent predictive analytics and automation model designed for real-time AI-driven insights. Built using Python, TensorFlow, Flask API for seamless integration, and Docker for scalable and efficient deployments.',
-            imageUrl: 'https://via.placeholder.com/300x200.png?text=PredictiFlow',
+            imageUrl: '/images/Predictic.png',
             link: 'https://example.com',
           },
           {
             title: 'AI JobFinder',
             description:
               'A dynamic job search platform powered by AI, analyzing user resumes with GPT-4 and matching ideal roles in real-time. Built using React, Node.js, MongoDB, and OpenAI, providing intelligent job recommendations and application tracking.',
-            imageUrl: 'https://via.placeholder.com/300x200.png?text=AI+JobFinder',
+            imageUrl: '/images/Job.png',
             link: 'https://example.com',
           },
           {
             title: 'GitProfile',
             description:
               'Personalized GitHub portfolio showcasing user stats, projects, and contributions dynamically via GitHub API. Crafted with React, TypeScript, Tailwind CSS, Google Analytics integration, and progressive web app (PWA) features.',
-            imageUrl: 'https://via.placeholder.com/300x200.png?text=GitProfile',
+            imageUrl: '/images/Git.png',
             link: 'https://example.com',
           }
         ]
@@ -255,7 +256,7 @@ const CONFIG= {
       imageURL:
         'public/My_Photo.jepg',
     },
-    footer: '© 2024 Prabal Manchanda. All rights reserved. | Built with ❤️ using React and Vite.',
+    footer: '© 2025 Prabal Manchanda. All rights reserved. | Built with ❤️ using React and Vite.',
     enablePWA: true
   };
   
