@@ -1,4 +1,5 @@
-const CONFIG = {
+import { Config } from './src/interfaces/config';
+const CONFIG: Config= {
     github: {
       username: 'Prabal31',
       sortBy: 'stars',
