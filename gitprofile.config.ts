@@ -169,46 +169,60 @@ const CONFIG= {
           {
             title: 'PhrasePerfect',
             description:
-              'React + Gemini AI app with 6 AI-powered tools like paraphrasing, grammar check, summarizer, translator, AI detector, and citation generator. Uses Firebase and MongoDB for real-time performance.',
+              'An advanced AI-powered writing assistant featuring paraphrasing, grammar checking, summarization, translation, AI detection, and citation generation. Built with React, Gemini AI, Firebase for real-time updates, and MongoDB for efficient data management.',
             imageUrl: 'https://via.placeholder.com/300x200.png?text=PhrasePerfect',
-            link: 'https://example.com',
+            link: '/public/PhrasePerfect.png',
           },
           {
-            title: 'Portfolio Builder',
+            title: 'Portfolio Builder Pro',
             description:
-              'Build portfolios using Node.js and GPT-4 with OpenAI integration. Features intuitive form-based UI and custom command generation for quick deployment.',
-            imageUrl: 'https://via.placeholder.com/300x200.png?text=Portfolio+Builder',
-            link: 'https://example.com',
+              'Next-gen portfolio generator powered by GPT-4 and OpenAI, allowing intuitive form-based UI inputs and automated command-line deployments. Built with Node.js, Express, and dynamic API integrations for enhanced customization.',
+            imageUrl: 'https://via.placeholder.com/300x200.png?text=Portfolio+Builder+Pro',
+            link: '/Portfolio_builder.png',
           },
           {
             title: 'Deeproot',
             description:
-              'Browser extension integrating real-time stock data, market news, and AI-driven insights directly into Chrome/Firefox. Built with React, Flask, Firebase, MongoDB, and OpenAI.',
+              'Real-time market insights browser extension delivering personalized stock updates and news. Developed using Vue.js frontend, Python backend with Firebase integration, OpenAI-driven analytics, and deployed on Azure for scalable performance.',
             imageUrl: 'https://via.placeholder.com/300x200.png?text=Deeproot',
             link: 'https://example.com',
           },
           {
             title: 'Skeleton',
             description:
-              'Streamlines full-stack project setup by generating bash commands based on user input. Built with React, Node.js, Express, dynamic API fetching, and project template database.',
+              'Automated full-stack project scaffolding tool generating tailored bash commands for Flask backend, React frontend, MongoDB database, and integrated cloud services. Streamlines workflow and accelerates project initialization.',
             imageUrl: 'https://via.placeholder.com/300x200.png?text=Skeleton',
             link: 'https://example.com',
           },
           {
             title: 'WellnessGenie',
             description:
-              'A wellness tracker for IT professionals integrating wearable data, mental wellness tips, and AI recommendations. Backed by TAM research, AI-driven alerts, and a sleek UX.',
+              'AI-driven wellness tracking platform designed specifically for IT professionals. Integrates wearable technology, mental health analytics, personalized recommendations, and intuitive UX/UI, built with React, Firebase, ML models, and validated through extensive TAM analysis.',
             imageUrl: 'https://via.placeholder.com/300x200.png?text=WellnessGenie',
             link: 'https://example.com',
           },
           {
-            title: 'Machilearn Model',
+            title: 'PredictiFlow',
             description:
-              'Custom machine learning model trained for AI applications with focus on predictive analytics, automation, and API integration for real-time inference.',
-            imageUrl: 'https://via.placeholder.com/300x200.png?text=Machilearn+Model',
+              'An intelligent predictive analytics and automation model designed for real-time AI-driven insights. Built using Python, TensorFlow, Flask API for seamless integration, and Docker for scalable and efficient deployments.',
+            imageUrl: 'https://via.placeholder.com/300x200.png?text=PredictiFlow',
             link: 'https://example.com',
           },
-        ],
+          {
+            title: 'AI JobFinder',
+            description:
+              'A dynamic job search platform powered by AI, analyzing user resumes with GPT-4 and matching ideal roles in real-time. Built using React, Node.js, MongoDB, and OpenAI, providing intelligent job recommendations and application tracking.',
+            imageUrl: 'https://via.placeholder.com/300x200.png?text=AI+JobFinder',
+            link: 'https://example.com',
+          },
+          {
+            title: 'GitProfile',
+            description:
+              'Personalized GitHub portfolio showcasing user stats, projects, and contributions dynamically via GitHub API. Crafted with React, TypeScript, Tailwind CSS, Google Analytics integration, and progressive web app (PWA) features.',
+            imageUrl: 'https://via.placeholder.com/300x200.png?text=GitProfile',
+            link: 'https://example.com',
+          }
+        ]
       },
       
     },
