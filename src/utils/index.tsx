@@ -10,12 +10,6 @@ import {
   SanitizedThemeConfig,
 } from '../interfaces/sanitized-config';
 
-// Fix: Add the missing Config type definition inline or import it properly if it exists elsewhere
-// If you don't have a specific Config type and want to avoid creating one, use 'any'
-
-// Option 1: Temporarily define Config inline (remove this if you have it defined already)
-type Config = any;
-
 export const isDarkishTheme = (appliedTheme: string): boolean => {
   return ['dark', 'halloween', 'forest', 'black', 'luxury', 'dracula'].includes(appliedTheme);
 };
@@ -28,13 +22,14 @@ type Colors = {
   [key: string]: { color: string | null; url: string };
 };
 
+// ✅ FIXED: config is now type `any`, or use `Partial<SanitizedConfig>` if you want safety
 export const getSanitizedConfig = (
-  config: Config, // Use actual interface if you have it
+  config: any,
 ): SanitizedConfig | Record<string, never> => {
   try {
     return {
       github: {
-        username: config.github.username,
+        username: config.github?.username ?? '',
       },
       projects: {
         github: {
@@ -63,7 +58,28 @@ export const getSanitizedConfig = (
         description: config?.seo?.description,
         imageURL: config?.seo?.imageURL,
       },
-      social: config?.social || {},
+      social: {
+        linkedin: config?.social?.linkedin,
+        x: config?.social?.x,
+        mastodon: config?.social?.mastodon,
+        facebook: config?.social?.facebook,
+        instagram: config?.social?.instagram,
+        reddit: config?.social?.reddit,
+        threads: config?.social?.threads,
+        youtube: config?.social?.youtube,
+        udemy: config?.social?.udemy,
+        dribbble: config?.social?.dribbble,
+        behance: config?.social?.behance,
+        medium: config?.social?.medium,
+        dev: config?.social?.dev,
+        stackoverflow: config?.social?.stackoverflow,
+        website: config?.social?.website,
+        phone: config?.social?.phone,
+        email: config?.social?.email,
+        skype: config?.social?.skype,
+        telegram: config?.social?.telegram,
+        researchGate: config?.social?.researchGate,
+      },
       resume: {
         fileUrl: config?.resume?.fileUrl || '',
       },
@@ -116,7 +132,7 @@ export const getInitialTheme = (themeConfig: SanitizedThemeConfig): string => {
 
   if (
     typeof window !== 'undefined' &&
-    !(localStorage.getItem(LOCAL_STORAGE_KEY_NAME) === null)
+    localStorage.getItem(LOCAL_STORAGE_KEY_NAME)
   ) {
     const savedTheme = localStorage.getItem(LOCAL_STORAGE_KEY_NAME);
     if (savedTheme && themeConfig.themes.includes(savedTheme)) {
