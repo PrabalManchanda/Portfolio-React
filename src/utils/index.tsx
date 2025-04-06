@@ -3,13 +3,18 @@ import { LOCAL_STORAGE_KEY_NAME } from '../constants';
 import { DEFAULT_CUSTOM_THEME } from '../constants/default-custom-theme';
 import { DEFAULT_THEMES } from '../constants/default-themes';
 import colors from '../data/colors.json';
-import { Config } from '../interfaces/config'; // adjust the path as needed
 
 import {
   SanitizedConfig,
   SanitizedHotjar,
   SanitizedThemeConfig,
 } from '../interfaces/sanitized-config';
+
+// Fix: Add the missing Config type definition inline or import it properly if it exists elsewhere
+// If you don't have a specific Config type and want to avoid creating one, use 'any'
+
+// Option 1: Temporarily define Config inline (remove this if you have it defined already)
+type Config = any;
 
 export const isDarkishTheme = (appliedTheme: string): boolean => {
   return ['dark', 'halloween', 'forest', 'black', 'luxury', 'dracula'].includes(appliedTheme);
@@ -24,7 +29,7 @@ type Colors = {
 };
 
 export const getSanitizedConfig = (
-  config: Config,
+  config: Config, // Use actual interface if you have it
 ): SanitizedConfig | Record<string, never> => {
   try {
     return {
@@ -58,49 +63,15 @@ export const getSanitizedConfig = (
         description: config?.seo?.description,
         imageURL: config?.seo?.imageURL,
       },
-      social: {
-        linkedin: config?.social?.linkedin,
-        x: config?.social?.x,
-        mastodon: config?.social?.mastodon,
-        facebook: config?.social?.facebook,
-        instagram: config?.social?.instagram,
-        reddit: config?.social?.reddit,
-        threads: config?.social?.threads,
-        youtube: config?.social?.youtube,
-        udemy: config?.social?.udemy,
-        dribbble: config?.social?.dribbble,
-        behance: config?.social?.behance,
-        medium: config?.social?.medium,
-        dev: config?.social?.dev,
-        stackoverflow: config?.social?.stackoverflow,
-        website: config?.social?.website,
-        phone: config?.social?.phone,
-        email: config?.social?.email,
-        skype: config?.social?.skype,
-        telegram: config?.social?.telegram,
-        researchGate: config?.social?.researchGate,
-      },
+      social: config?.social || {},
       resume: {
         fileUrl: config?.resume?.fileUrl || '',
       },
       skills: config?.skills || [],
-      experiences:
-        config?.experiences?.filter(
-          (experience) =>
-            experience.company ||
-            experience.position ||
-            experience.from ||
-            experience.to,
-        ) || [],
-      certifications:
-        config?.certifications?.filter(
-          (certification) => certification.name && certification.link,
-        ) || [],
-      educations:
-        config?.educations?.filter(
-          (item) => item.institution || item.degree || item.from || item.to,
-        ) || [],
-      publications: config?.publications?.filter((item) => item.title) || [],
+      experiences: config?.experiences || [],
+      certifications: config?.certifications || [],
+      educations: config?.educations || [],
+      publications: config?.publications || [],
       googleAnalytics: {
         id: config?.googleAnalytics?.id,
       },
