@@ -4,9 +4,7 @@
     "skipLibCheck": true,
     "module": "ESNext",
     "moduleResolution": "bundler",
-    "allowSyntheticDefaultImports": true,
-    "declaration": true,
-    "declarationMap": true
+    "allowSyntheticDefaultImports": true
   },
-  "include": ["gitprofile.config.ts", "vite.config.ts", "src"]
+  "include": ["gitprofile.config.ts", "vite.config.ts"]
 }
