@@ -98,16 +98,21 @@ const CONFIG = {
       }
     ],
     certifications: [
-      { name: 'Node.js', link: '' },
-      { name: 'Python 3', link: '' },
-      { name: 'Microsoft Azure', link: '' },
-      { name: 'DevOps Course', link: '' },
-      { name: 'Ruby', link: '' },
-      { name: 'Lua Course', link: '' },
-      { name: 'JavaScript', link: '' },
-      { name: 'React.js', link: '' },
-      { name: 'Data and Programming Foundation for AI', link: '' }
+      { name: 'Python 3', link: '/Certificates/Python_certificate.pdf' },
+      { name: 'JavaScript', link: '/Certificates/JavaScript_Certificate.pdf' },
+      { name: 'Microsoft Azure', link: '/Certificates/Microsoft%20Azure_certificate.pdf' }, // encoded space
+      { name: 'Node.js', link: '/Certificates/Node_certificate.pdf' },
+      { name: 'React.js', link: '/Certificates/React_Certificate.pdf' },
+      { name: 'Ruby', link: '/Certificates/Ruby_Certification.pdf' },
+      { name: 'Lua', link: '/Certificates/Lua_Certification.pdf' },
+      { name: 'DevOps Course', link: '/Certificates/DevOps_Certification.pdf' },
+      {
+        name: 'Data and Programming Foundation for AI',
+        link: '/Certificates/Data_and_Programming_Foundation_for_AI_Certification.pdf',
+      },
     ],
+    
+    
     educations: [
       {
         institution: 'Sheridan College',

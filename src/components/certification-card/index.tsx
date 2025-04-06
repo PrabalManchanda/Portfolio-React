@@ -20,9 +20,18 @@ const ListItem = ({
     ></div>
     <div className="my-0.5 text-xs">{year}</div>
     <div className="font-medium">
-      <a href={link} target="_blank" rel="noreferrer">
-        {name}
-      </a>
+      {link ? (
+        <a
+          href={link}
+          target="_blank"
+          rel="noreferrer noopener"
+          className="underline text-primary hover:text-secondary transition"
+        >
+          {name}
+        </a>
+      ) : (
+        name
+      )}
     </div>
     <h3 className="mb-4 font-normal">{body}</h3>
   </li>

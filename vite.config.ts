@@ -23,7 +23,11 @@ export default defineConfig({
           VitePWA({
             registerType: 'autoUpdate',
             workbox: {
-              navigateFallback: undefined,
+              navigateFallback: 'index.html',
+              navigateFallbackDenylist: [
+                new RegExp('^/Certificates/'),
+                new RegExp('\\.pdf$'),
+              ],
             },
             includeAssets: ['logo.png'],
             manifest: {
