@@ -239,7 +239,7 @@ const CONFIG= {
       description:
         "Hi, I'm Prabh Manchanda — a software engineer building scalable, AI-powered solutions with precision and creativity.",
       imageURL:
-        'https://via.placeholder.com/1200x630.png?text=Prabh+Manchanda+Portfolio'
+        'public/My_Photo.jepg',
     },
     footer: '© 2024 Prabal Manchanda. All rights reserved. | Built with ❤️ using React and Vite.',
     enablePWA: true
