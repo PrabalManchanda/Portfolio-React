@@ -1,41 +1,7 @@
 import React from 'react';
 import { SanitizedCertification } from '../../interfaces/sanitized-config';
 import { skeleton } from '../../utils';
-
-const ListItem = ({
-  year,
-  name,
-  body,
-  link,
-}: {
-  year?: React.ReactNode;
-  name?: React.ReactNode;
-  body?: React.ReactNode;
-  link?: string;
-}) => (
-  <li className="mb-5 ml-4">
-    <div
-      className="absolute w-2 h-2 bg-base-300 rounded-full border border-base-300 mt-1.5"
-      style={{ left: '-4.5px' }}
-    ></div>
-    <div className="my-0.5 text-xs">{year}</div>
-    <div className="font-medium">
-      {link ? (
-        <a
-          href={link}
-          target="_blank"
-          rel="noreferrer noopener"
-          className="underline text-primary hover:text-secondary transition"
-        >
-          {name}
-        </a>
-      ) : (
-        name
-      )}
-    </div>
-    <h3 className="mb-4 font-normal">{body}</h3>
-  </li>
-);
+import { FaCertificate } from 'react-icons/fa';
 
 const CertificationCard = ({
   certifications,
@@ -45,26 +11,31 @@ const CertificationCard = ({
   loading: boolean;
 }) => {
   const renderSkeleton = () => {
-    const array = [];
-    for (let index = 0; index < 2; index++) {
-      array.push(
-        <ListItem
-          key={index}
-          year={skeleton({
-            widthCls: 'w-5/12',
-            heightCls: 'h-4',
-          })}
-          name={skeleton({
-            widthCls: 'w-6/12',
-            heightCls: 'h-4',
-            className: 'my-1.5',
-          })}
-          body={skeleton({ widthCls: 'w-6/12', heightCls: 'h-3' })}
-        />,
-      );
-    }
+    return Array.from({ length: 4 }).map((_, index) => (
+      <li key={index} className="mb-4 flex items-center space-x-3">
+        {skeleton({ widthCls: 'w-5', heightCls: 'w-5', shape: 'rounded-full' })}
+        <div>
+          {skeleton({ widthCls: 'w-40', heightCls: 'h-4', className: 'mb-1' })}
+          {skeleton({ widthCls: 'w-28', heightCls: 'h-3' })}
+        </div>
+      </li>
+    ));
+  };
 
-    return array;
+  const renderCertifications = () => {
+    return certifications.map((cert, index) => (
+      <li key={index} className="mb-4 flex items-center space-x-3">
+        <FaCertificate className="text-primary min-w-[1rem]" />
+        <a
+          href={cert.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-sm underline text-primary hover:text-secondary transition"
+        >
+          {cert.name}
+        </a>
+      </li>
+    ));
   };
 
   return (
@@ -75,30 +46,14 @@ const CertificationCard = ({
             {loading ? (
               skeleton({ widthCls: 'w-32', heightCls: 'h-8' })
             ) : (
-              <span className="text-base-content opacity-70">
-                Certification
-              </span>
+              <span className="text-base-content opacity-70">Certifications</span>
             )}
           </h5>
         </div>
-        <div className="text-base-content text-opacity-60">
-          <ol className="relative border-l border-base-300 border-opacity-30 my-2 mx-4">
-            {loading ? (
-              renderSkeleton()
-            ) : (
-              <>
-                {certifications.map((certification, index) => (
-                  <ListItem
-                    key={index}
-                    year={certification.year}
-                    name={certification.name}
-                    body={certification.body}
-                    link={certification.link}
-                  />
-                ))}
-              </>
-            )}
-          </ol>
+        <div className="px-4 py-2 text-base-content text-opacity-70">
+          <ul className="list-none">
+            {loading ? renderSkeleton() : renderCertifications()}
+          </ul>
         </div>
       </div>
     </div>

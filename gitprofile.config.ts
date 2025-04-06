@@ -25,10 +25,25 @@ const CONFIG= {
       fileUrl: '', // Add your resume URL here
     },
     skills: [
-      'Python', 'Java', 'JavaScript', 'TypeScript', 'React.js', 'Node.js',
-      'Spring Boot', 'MongoDB', 'MySQL', 'Firebase',
-      'Azure', 'OpenAI API', 'Docker', 'Git', 'Tailwind CSS', 'SQL', 'HTML', 'CSS'
+      // Backend
+      'Node.js', 'Spring Boot', 'Flask', 'PostgreSQL', 'MongoDB',
+    
+      // Coding
+      'Python', 'JavaScript', 'TypeScript', 'Java', 'SQL', 'Git',
+    
+      // DevOps
+      'Docker', 'CI/CD (Azure DevOps)', 'Terraform', 'Linux',
+    
+      // Cloud
+      'Azure Functions', 'AWS (Lambda, S3)',
+    
+      // Machine Learning
+      'TensorFlow', 'PyTorch', 'LLMs', 'Generative AI', 'OpenAI API',
+    
+      // Data
+      'Pandas', 'NumPy', 'Scikit-learn', 'EDA', 'Data Cleaning'
     ],
+    
     experiences: [
       {
         company: 'GenieAInow',
