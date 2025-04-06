@@ -171,7 +171,7 @@ const CONFIG= {
             description:
               'An advanced AI-powered writing assistant featuring paraphrasing, grammar checking, summarization, translation, AI detection, and citation generation. Built with React, Gemini AI, Firebase for real-time updates, and MongoDB for efficient data management.',
             imageUrl: 'https://via.placeholder.com/300x200.png?text=PhrasePerfect',
-            link: '/public/PhrasePerfect.png',
+            link: '/PhrasePerfect.png',
           },
           {
             title: 'Portfolio Builder Pro',
