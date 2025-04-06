@@ -1,4 +1,3 @@
-import React from 'react';
 import { SanitizedCertification } from '../../interfaces/sanitized-config';
 import { skeleton } from '../../utils';
 import { FaCertificate } from 'react-icons/fa';
