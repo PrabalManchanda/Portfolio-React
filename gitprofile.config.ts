@@ -165,6 +165,7 @@ const CONFIG= {
             ],
           },
       },
+      
       external: {
         header: 'Featured Projects',
         projects: [
