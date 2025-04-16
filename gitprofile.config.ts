@@ -22,7 +22,7 @@ const CONFIG= {
       email: 'manchandaprabal878@email.com',
     },
     resume: {
-      fileUrl: '', 
+      fileUrl: 'public/Resume.pdf', 
     },
     skills: [
       'Node.js', 'Spring Boot', 'Flask', 'PostgreSQL', 'MongoDB',
