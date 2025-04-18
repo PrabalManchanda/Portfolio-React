@@ -8,7 +8,6 @@ const CONFIG= {
         projects: [],
       },
     },
-    
     social: {
       linkedin: 'prabal-manchanda',
       twitter: '',
