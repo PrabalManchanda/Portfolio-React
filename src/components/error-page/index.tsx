@@ -1,5 +1,6 @@
 import { CustomError } from '../../constants/errors';
 
+
 const ErrorPage: React.FC<CustomError> = (props) => {
   return (
     <div className="min-w-screen min-h-screen bg-base-200 flex items-center p-5 lg:p-20 overflow-hidden relative">
