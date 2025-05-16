@@ -41,9 +41,23 @@ const CONFIG= {
     experiences: [
       {
         company: 'GenieAInow',
+        position: 'Machine Learning Engineer',
+        from: 'May 2025',
+        to: 'Present',
+        companyLink: 'https://www.genieainow.com/genie-a.i-home-page',
+        description: [
+          '🚀 Spearheaded AI/ML innovations using LLMs, Python, Azure, and OpenAI, improving platform performance and engagement.',
+          '🛠️ Automated AI deployment pipelines with Azure DevOps, reducing delivery time and enhancing reliability.',
+          '⚙️ Fine-tuned models and leveraged cloud computing for faster inference and improved scalability.',
+          '🧠 Integrated NLP and deep learning solutions, adding intelligent AI-powered user features.',
+          '🧪 Led MLOps architecture planning, boosting system stability and AI deployment efficiency.'
+        ]
+      },
+      {
+        company: 'GenieAInow',
         position: 'Software Developer',
         from: 'December 2024',
-        to: 'Present',
+        to: 'April 2025',
         companyLink: 'https://www.genieainow.com/genie-a.i-home-page',
         description: [
           '🚀 Spearheaded AI/ML innovations using LLMs, Python, Azure, and OpenAI, improving platform performance and engagement.',
